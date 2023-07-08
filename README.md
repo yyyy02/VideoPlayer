@@ -8,7 +8,7 @@
 ## Project Introduce
 * Select folder
     * Select local folder to upload video
-    * ![image](https://github.com/yyyy02/VideoPlayer/blob/main/src/images/main.jpg)
+    * ![image](https://github.com/yyyy02/VideoPlayer/src/images/main.jpg)
 * Video preview
     * Support lazy video loading
 * Video playback
