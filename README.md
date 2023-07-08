@@ -9,11 +9,15 @@
 * Select folder
     * Select local folder to upload video
     * ![image](https://github.com/yyyy02/VideoPlayer/blob/main/src/images/main.png)
+    * ![image](https://github.com/yyyy02/VideoPlayer/blob/main/src/images/main-2.png)
 * Video preview
     * Support lazy video loading
 * Video playback
+    * ![image](https://github.com/yyyy02/VideoPlayer/blob/main/src/images/VideoPlayer.png)
     * Support progress bar preview time frame
+    * ![image](https://github.com/yyyy02/VideoPlayer/blob/main/src/images/VideoPlayer-list2.png)
     * Support list preview video playback
+    * ![image](https://github.com/yyyy02/VideoPlayer/blob/main/src/images/VideoPlayer-list.png)
 
 
 ## Operating instructions
