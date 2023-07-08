@@ -1,0 +1,102 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  min-height: 80vh;
+  margin-top: 1%;
+}
+
+.playChatVideo {
+  border: solid 2px cadetblue;
+  margin-top: 60px;
+  margin-right: 220px;
+}
+
+video::-webkit-media-controls-timeline {
+  display: flex;
+}
+
+.mytitle {
+  height: 90px;
+  line-height: 90px;
+  border-bottom: 1px solid #e0e0e0;
+  display: block;
+}
+.mytitle_h3 {
+  display: inline;
+  font-size: 25px;
+}
+
+.mylist {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  border: 0;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+.mylist_li {
+  padding: 16px 0;
+  font-size: 0;
+  border-top: 1px solid #e0e0e0;
+  list-style: none;
+  text-align: center;
+}
+.mylist_a {
+  width: 78%;
+  line-height: 24px;
+  font-size: 16px;
+  vertical-align: middle;
+  color: #000000;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+}
+.mylist_a2 {
+  width: 78%;
+  line-height: 24px;
+  font-size: 16px;
+  vertical-align: middle;
+  color: darkseagreen;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.preview {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: 50%;
+  right: 0%;
+}
+
+.play {
+  max-width: 80%;
+  flex: 1;
+  display: relative;
+  z-index: 0;
+  margin-left: 1rem;
+}
+
+.showBref {
+  z-index: 1;
+}
+
+.list_header {
+  text-align: center;
+}
+
+.list_inner {
+  max-height: 60vh;
+  overflow-y: scroll;
+  overflow: auto;
+  overflow-x: hidden;
+}

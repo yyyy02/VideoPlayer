@@ -1,0 +1,133 @@
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  margin: 0 auto;
+  width: 1243px;
+}
+
+.box {
+  position: relative;
+  box-sizing: border-box;
+  margin: 150px auto;
+  width: 500px;
+  height: 250px;
+  padding-top: 10px;
+  /* background-color: rgb(15, 192, 197); */
+}
+
+.file {
+  position: relative;
+  margin: 10px auto;
+  width: 300px;
+  height: 80px;
+  line-height: 80px;
+  padding: 0 10px;
+  background-color: #fff;
+  color: black;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.fileText {
+  margin-left: 20px;
+}
+
+.loadType {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 238px;
+  width: 300px;
+  height: 100px;
+  border-radius: 8px;
+  background-color: #fff;
+  display: none;
+}
+
+.loadTypeItem {
+  position: relative;
+  display: block;
+  padding: 0;
+  list-style: none;
+  width: 268px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 18px;
+  border: none;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.loadTypeItem:hover {
+  background-color: #d3d3d3;
+}
+
+.file input,
+.loadTypeItem input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 50px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* loading特效 */
+
+/* 动画 */
+
+@keyframes load-effect {
+  0% {
+    box-shadow: -3em 2em 0 0.5em #fff, 0 2em 0 0 #fff, 3em 2em 0 -0.5em #fff;
+  }
+  25% {
+    box-shadow: -3em 2em 0 0 #fff, 0 2em 0 -0.5em #fff, 3em 2em 0 0 #fff;
+  }
+  50% {
+    box-shadow: -3em 2em 0 -0.5em #fff, 0 2em 0 0 #fff, 3em 2em 0 0.5em #fff;
+  }
+  75% {
+    box-shadow: -3em 2em 0 0 #fff, 0 2em 0 0.5em #fff, 3em 2em 0 0 #fff;
+  }
+  100% {
+    box-shadow: -3em 2em 0 0.5em #fff, 0 2em 0 0 #fff, 3em 2em 0 -0.5em #fff;
+  }
+}
+
+.loader {
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  animation: load-effect 1s infinite linear;
+  opacity: 0;
+}
+
+.mess {
+  height: 50px;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  display: none;
+}
+
+/* 跳转提示框 */

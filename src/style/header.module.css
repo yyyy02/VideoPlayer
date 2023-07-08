@@ -1,0 +1,126 @@
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.nav {
+  height: 70px;
+  border-bottom: cornflowerblue 2px dotted;
+}
+
+.navmiddle {
+  width: 40%;
+  height: 70px;
+  /*background-color: green;*/
+  float: left;
+}
+.navmiddle h1 {
+  text-align: center;
+  margin: 10px 0;
+  color: cadetblue;
+}
+.navmiddle > ul li a {
+  width: 70px;
+  height: 40px;
+  color: royalblue;
+  margin-top: 2px;
+  margin-left: 60px;
+  font-size: 16px;
+  font-family: "Microsoft Himalaya";
+  float: left;
+}
+.navmiddle ul li a:hover {
+  color: #ef4222;
+}
+
+.navright {
+  width: 30%;
+  height: 70px;
+  /*background-color: gold;*/
+  float: left;
+}
+.navleft {
+  position: relative;
+  width: 30%;
+  height: 70px;
+  /*background-color: red;*/
+  float: left;
+  padding-top: 10px;
+  vertical-align: text-bottom;
+}
+.logo {
+  /*background-color: aquamarine;*/
+  width: 60px;
+  margin-left: 120px;
+}
+.zjut {
+  position: absolute;
+  top: 22px;
+  display: inline-block;
+  font: 26px "Microsoft Himalaya";
+  color: darkseagreen;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.toshow {
+  overflow: hidden;
+  min-width: 60px;
+  /*margin-top: 15px;*/
+  padding: 13px 8px;
+
+  background: #fff;
+
+  color: #333;
+
+  border: none;
+  /*border: 1px solid darkseagreen;*/
+}
+.toshow:hover {
+  color: darkseagreen;
+  cursor: pointer;
+  /*background: darkseagreen;*/
+}
+
+.toshow:focus {
+  color: #fff;
+  cursor: pointer;
+  /*background: #0a90f5;*/
+  background: darkseagreen;
+
+  outline: none;
+}
+.tomain,
+.toplay {
+  margin-left: 29px;
+  /*margin-top: 20px;*/
+
+  min-width: 60px;
+
+  padding: 13px 8px;
+
+  background: #fff;
+
+  /*color: #4daff9;*/
+  color: #333;
+
+  /*border: 1px solid darkseagreen;*/
+  border: none;
+}
+.tomain:hover,
+.toplay:hover {
+  color: darkseagreen;
+  cursor: pointer;
+  /*background: darkseagreen;*/
+}
+
+.tomain:focus,
+.toplay:focus {
+  color: darkseagreen;
+  cursor: pointer;
+  /*background: darkseagreen;*/
+
+  outline: none;
+}

@@ -1,0 +1,97 @@
+@import "~antd/dist/antd.css";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.videoList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 400px);
+  justify-content: space-evenly;
+
+  margin-top: 30px;
+}
+
+/* 一个video卡片 */
+.videoCard {
+  position: relative;
+  /* background-color: skyblue; */
+}
+
+/* 一个视频的大小(不包括标题) */
+.videoCard .videoSize {
+  height: 300px;
+  width: 400px;
+  border-radius: 6px;
+}
+
+.videoCard .videoSize,
+.videoCard h3 {
+  cursor: pointer;
+}
+
+/* 视频加载时显示等待的mask */
+.videoCard .videoLoadingMask {
+  /* opacity: 0; */
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+}
+
+.videoCard .videoLoadingMask .loadingIcon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 鼠标放在视频上, 用来遮罩的mask */
+.videoCard .videoHoverMask {
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  /* display: none; */
+  background-color: rgb(0, 0, 0);
+}
+
+.videoCard .videoHoverMask:hover {
+  /* position: relative;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.3); */
+  opacity: 0.5;
+  /* z-index: 10; */
+}
+
+/* 视频封面 */
+.videoCard .videoImgBox {
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  border: solid 2px cadetblue;
+}
+
+.videoCard .videoImgBox img {
+  /* 裁剪视频封面, 居中显示 */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* img设置稍大一点, 防止视频封面过小导致的白边 */
+  height: 102%;
+}
+
+/* 视频标题部分 */
+.videoCard h3 {
+  padding: 0 0 16px 0;
+  margin-top: 5px;
+  width: 400px;
+  text-align: center;
+}
+
+.videoCard h3:hover {
+  color: rgb(24, 144, 255);
+}
